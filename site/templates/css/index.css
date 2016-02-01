@@ -1202,6 +1202,12 @@ nav ul li a.meal-plans:hover {
   height: auto;
   padding: 1em;
 }
+.page-body p {
+  color: #212121;
+}
+.posts.posts-small {
+  float: left;
+}
 .orange {
   background-color: #f39623;
 }
@@ -1229,6 +1235,9 @@ nav ul li a.meal-plans:hover {
 }
 .recipes-list .recipe a:hover {
   color: rgba(255,255,255,0.4);
+}
+.recipes-list h3 {
+  color: #212121;
 }
 .recipe-page h2,
 .recipe-page p,

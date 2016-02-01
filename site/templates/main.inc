@@ -104,14 +104,14 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
 	?>
 
 
-	<div id="wrap-footer">
+	<footer id="wrap-footer">
 		<div class="container">
-			<div id="footer" class="sixteen columns">
+			<div id="footer" class="small-12 columns">
 				<small id='footer_note'><?php echo $homepage->note; ?></small>
 				<small id='processwire'>Powered by <a target='_blank' href='http://processwire.com'>ProcessWire Open Source CMS</a></small>
 			</div><!--/#footer-->
 		</div><!--/.container-->
-	</div><!--/#footer-container-->
+	</footer><!--/#footer-container-->
 
 <?php foreach($config->scripts as $file) echo "<script src='$file'></script>"; ?>
 </body>

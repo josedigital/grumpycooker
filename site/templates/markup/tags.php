@@ -34,10 +34,13 @@ foreach($tags as $tag) {
 
 $out .= "</ul>";
 
+echo "<section class='tags'>";
+echo "<div class='container'><div class='small-12 med-8 med-push-2 columns'>";
 echo "<p class='jumplinks'>";
 foreach($letters as $letter) {
 	echo "<a href='./#letter_$letter'>$letter</a> ";
 }
 echo "</p>";
 echo $out; 
+echo '</div></div></section><!-- /.tags -->';
 
