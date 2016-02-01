@@ -50,7 +50,7 @@ $(function() {
 
   // Scrolly
   // ------------------------------ /
-  scroll.scrolly(500);
+  // scroll.scrolly(500);
 
 
 
