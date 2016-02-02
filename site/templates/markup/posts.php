@@ -50,7 +50,7 @@ if($small) {
 	}
 	?>
 
-	<?php if(!count($posts)) echo "<h5>" . __("No posts found.") . "</h5>"; ?>
+	<?php if(!count($posts)) echo "<div class='small-12 med-8 med-push-2 columns'><h3>" . __("No posts found.") . "</h3></div>"; ?>
 
 </div><!--/.posts-->
 

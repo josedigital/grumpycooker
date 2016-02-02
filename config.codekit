@@ -87,6 +87,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/site\/assets\/files\/1169\/grumpyme2.0x100.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2226,
+		"inputAbbreviatedPath": "\/site\/assets\/files\/1169\/grumpyme2.0x100.jpg",
+		"outputAbbreviatedPath": "\/site\/assets\/files\/1169\/grumpyme2.0x100.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/assets\/files\/1169\/grumpyme2.343x0-is.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20406,
+		"inputAbbreviatedPath": "\/site\/assets\/files\/1169\/grumpyme2.343x0-is.jpg",
+		"outputAbbreviatedPath": "\/site\/assets\/files\/1169\/grumpyme2.343x0-is.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/site\/assets\/files\/1169\/grumpyme2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 347810,
+		"inputAbbreviatedPath": "\/site\/assets\/files\/1169\/grumpyme2.jpg",
+		"outputAbbreviatedPath": "\/site\/assets\/files\/1169\/grumpyme2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/site\/assets\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,

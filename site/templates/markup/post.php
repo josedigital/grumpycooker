@@ -94,11 +94,18 @@ if($small == true) :
                     <h2 class="font-bold uppercase"><?php echo $page->title; ?></h2>
                     <p><?php echo $page->summary; ?></p>
 
-                    <?php if (count($page->images)) echo '<img src="'. $page->images->url . $page->images .'" alt="">'; ?>
-                    <h3 class="font-bold uppercase">Ingredients</h3>
-                    <?php echo $page->ingredients; ?>
-                    <h3 class="font-bold uppercase">Process</h3>
-                    <?php echo $page->directions; ?>
+                    <?php if (count($page->images)) echo '<img src="'. $page->images->url . $page->images .'" alt="" class="'.$color.'">'; ?>
+                    <div class="container">
+                    	<div class="small-12 med-6 columns">
+		                    <h3 class="font-bold uppercase">Ingredients</h3>
+		                    <?php echo $page->ingredients; ?>
+                    	</div>
+
+                    	<div class="small-12 med-6 columns">
+		                    <h3 class="font-bold uppercase">Process</h3>
+		                    <?php echo $page->directions; ?>
+		                </div>
+                    </div>
                 </div>
             </div>
         </section>
