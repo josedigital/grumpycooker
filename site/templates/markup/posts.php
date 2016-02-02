@@ -11,6 +11,22 @@
  * $small - whether to display them in a small/summarized format (boolean)
  *
  */
+switch ($page->template) {
+	case 'category':
+		$modifier = ' under category ' . $page->title;
+		break;
+
+	case 'tag':
+		$modifier = ' tagged with ' . $page->title;
+		break;
+	
+	default:
+		$modifier = ''; 
+		break;
+}
+// if($page->template == 'category') echo '<h3>'.$page->title.'</h3>'; 
+
+
 
 if($small) {
 	// display a headline indicating quantities
@@ -18,7 +34,10 @@ if($small) {
 	$end = $start + count($posts)-1;
 	$total = $posts->getTotal();
 
-	if($total) echo "<h3>" . sprintf(__('Posts %1$d to %2$d of %3$d'), $start, $end, $total) . "</h3>";
+	if($total) echo "
+		<div class='small-12 columns'>
+			<h3>" . sprintf(__('Recipes %1$d to %2$d of %3$d'), $start, $end, $total) . "{$modifier}</h3>
+		</div>";
 }
 
 ?>

@@ -122,7 +122,13 @@ if($input->urlSegment1 && $input->urlSegment2) {
 	$selector = "template=post, date>=$firstDate, date<$lastDate, sort=-date";
 	$posts = $pages->find($selector);
 	$headline = strftime("%B %Y", $firstDate);
-	$content = renderPosts($posts, true);
+	
+	$content = '<section class="recipes-list">
+	            <div class="container">';
+	$content .= renderPosts($posts, true);
+	$content .= '</div>
+	        </section>';
+
 
 	$archives = getArchives();
 	$yearsNav = array();
@@ -148,12 +154,22 @@ if($input->urlSegment1 && $input->urlSegment2) {
 		if($key != $year) unset($archives[$key]); 
 	}
 	$subnav = renderNav($page->title, $yearsNav, $page->url . "$year/"); 
-	$content = renderArchives($archives); 
+	$content = '<section class="recipes-list">
+	            <div class="container">';
+	$content .= renderArchives($archives); 
+	$content .= '</div>
+        </section>';
+
 
 } else {
 	// root, no date specified
 	$headline = $page->title;
-	$content = $page->body . renderArchives(getArchives()); 
+	$content = '<section class="recipes-list">
+	            <div class="container">';
+	$content .= $page->body . renderArchives(getArchives()); 
+	$content .= '</div>
+	        </section>';
+
 }
 
 include("./main.inc"); 

@@ -26,41 +26,44 @@
  */
 ?>
 
-<div class='archive'>
+<section class='archive'>
+	<div class="container">
+		<div class="small-12 med-8 med-push-2 columns">
 
-	<h3>
-	<a href='<?php echo $url; ?>'><?php echo $year; ?></a> 
-	</h3>
+			<h3>
+			<a href='<?php echo $url; ?>'><?php echo $year; ?></a> 
+			</h3>
 
-	<span class='num-posts'><?php echo sprintf(_n('%d post', '%d posts', $total), $total); ?></span>
+			<span class='num-posts'><?php echo sprintf(_n('%d post', '%d posts', $total), $total); ?></span>
 
-	<ul class='posts-group'>
+			<ul class='posts-group'>
 
-		<?php foreach($months as $monthNum => $month): ?>
+				<?php foreach($months as $monthNum => $month): ?>
 
-		<li>
-			<a href='<?php echo $month['url']; ?>'><?php echo $month['name']; ?></a>
-			<span class='num-posts'><?php echo sprintf(_n('%d post', '%d posts', $month['total']), $month['total']); ?></span>
+				<li>
+					<a href='<?php echo $month['url']; ?>'><?php echo $month['name']; ?></a>
+					<span class='num-posts'><?php echo sprintf(_n('%d post', '%d posts', $month['total']), $month['total']); ?></span>
 
-			<?php if(count($month['posts'])): // posts will be empty if $blog->archives() call specified 0 for limit; ?>
+					<?php if(count($month['posts'])): // posts will be empty if $blog->archives() call specified 0 for limit; ?>
 
-			<ul>
-				<?php foreach($month['posts'] as $item): ?>
-				<li><a href='<?php echo $item->url; ?>'><?php echo $item->title; ?></a></li>
+					<ul>
+						<?php foreach($month['posts'] as $item): ?>
+						<li><a href='<?php echo $item->url; ?>'><?php echo $item->title; ?></a></li>
+						<?php endforeach; ?>
+						
+						<?php if($month['total'] > count($month['posts'])): ?>
+						<li><a class='more' href='<?php echo $month['url']; ?>'><?php echo __('View All'); ?></a></li>
+						<?php endif; ?>
+					</ul>
+
+					<?php endif; ?>
+
+				</li>
+
 				<?php endforeach; ?>
-				
-				<?php if($month['total'] > count($month['posts'])): ?>
-				<li><a class='more' href='<?php echo $month['url']; ?>'><?php echo __('View All'); ?></a></li>
-				<?php endif; ?>
+
 			</ul>
 
-			<?php endif; ?>
-
-		</li>
-
-		<?php endforeach; ?>
-
-	</ul>
-
-</div>
-
+		</div>
+	</div>
+</section>

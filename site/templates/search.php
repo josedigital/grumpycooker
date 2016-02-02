@@ -21,7 +21,11 @@ if($q = $sanitizer->selectorValue($input->get->q)) {
 	$query = htmlentities($q, ENT_QUOTES, "UTF-8");
 
 	$headline = sprintf(__('You searched for: %s'), $query); 
-	$content = renderPosts($posts, true); 
+	$content = '<section class="recipes-list">
+	            <div class="container">';
+	$content .= renderPosts($posts, true); 
+	$content .= '</div>
+	        </section>';
 
 } else {
 	$headline = __('Please enter a search term in the search box');

@@ -1202,11 +1202,11 @@ nav ul li a.meal-plans:hover {
   height: auto;
   padding: 1em;
 }
-.page-body p {
+.page-body h3 {
   color: #212121;
 }
-.posts.posts-small {
-  float: left;
+.page-body p {
+  color: #212121;
 }
 .orange {
   background-color: #f39623;
