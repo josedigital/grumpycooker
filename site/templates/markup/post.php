@@ -92,7 +92,7 @@ if($small == true) :
                 
 			        <?php
 			        // get 3 similar posts
-			        $tags = $page->tags->slice(0, 3);
+			        $tags = $page->tags->getRandom(3);
 			        foreach ($tags as $tag) :
 			        	$random = $pages->find("template=post,tags={$tag}"); 
 			        	$rand = $random->getRandom();
