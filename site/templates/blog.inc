@@ -283,3 +283,41 @@ function renderNav($headline, $items, $currentURL = '') {
 	return $t->render();
 }
 
+
+
+
+
+
+function getbgcolor($page) {
+
+	switch ($page->bgcolor) {
+		case '1':
+			return $color = 'orange';
+			break;
+		
+		case '2':
+			return $color = 'light-purple';
+			break;
+
+		case '3':
+			return $color = 'dark-purple';
+			break;
+
+		case '4':
+			return $color = 'light-green';
+			break;
+
+		case '5':
+			return $color = 'dark-green';
+			break;
+
+		case '6':
+			return $color = 'pink';
+			break;
+
+		default:
+			return $color = 'pink';
+			break;
+	}
+
+}

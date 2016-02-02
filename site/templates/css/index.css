@@ -1208,6 +1208,11 @@ nav ul li a.meal-plans:hover {
 .page-body p {
   color: #212121;
 }
+img.align_left {
+  float: left;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
 .orange {
   background-color: #f39623;
 }
@@ -1226,17 +1231,21 @@ nav ul li a.meal-plans:hover {
 .pink {
   background-color: #f299c7;
 }
-.recipes-list .recipe {
+.recipes-list .recipe,
+.recommended .recipe {
   height: 340px;
   padding: 2em;
 }
-.recipes-list .recipe a {
+.recipes-list .recipe a,
+.recommended .recipe a {
   color: #fff;
 }
-.recipes-list .recipe a:hover {
+.recipes-list .recipe a:hover,
+.recommended .recipe a:hover {
   color: rgba(255,255,255,0.4);
 }
-.recipes-list h3 {
+.recipes-list h3,
+.recommended h3 {
   color: #212121;
 }
 .recipe-page h2,

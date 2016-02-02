@@ -16,42 +16,14 @@ $numComments = $page->comments->count();
 if($numComments > 0) $numCommentsStr = sprintf(_n('%d Comment', '%d Comments', $numComments), $numComments);
 	else $numCommentsStr = __('No comments yet'); 
 
-switch ($page->bgcolor) {
-	case '1':
-		$color = 'orange';
-		break;
-	
-	case '2':
-		$color = 'light-purple';
-		break;
 
-	case '3':
-		$color = 'dark-purple';
-		break;
-
-	case '4':
-		$color = 'light-green';
-		break;
-
-	case '5':
-		$color = 'dark-green';
-		break;
-
-	case '6':
-		$color = 'pink';
-		break;
-
-	default:
-		$color = 'pink';
-		break;
-}
 
 
 
 if($small == true) :
 ?>
 <div class="small-12 med-6 columns">
-    <div class="<?php echo $color;?> recipe" id='post-<?php echo $page->id; ?>'>
+    <div class="<?php echo getbgcolor($page);?> recipe" id='post-<?php echo $page->id; ?>'>
         <h3 class="font-bold uppercase"> <?php echo "<a href='{$page->url}'>{$page->title}</a>"; ?></h3>
         <?php
         $out = '';
@@ -94,7 +66,7 @@ if($small == true) :
                     <h2 class="font-bold uppercase"><?php echo $page->title; ?></h2>
                     <p><?php echo $page->summary; ?></p>
 
-                    <?php if (count($page->images)) echo '<img src="'. $page->images->url . '" alt="'.$page->images->description.'" class="'.$color.' recipe-image">'; ?>
+                    <?php if (count($page->images)) echo '<img src="'. $page->images->url . '" alt="'.$page->images->description.'" class="'.getbgcolor($page).' recipe-image">'; ?>
                     <div class="container">
                     	<div class="small-12 med-6 columns">
 		                    <h3 class="font-bold uppercase">Ingredients</h3>
@@ -110,5 +82,63 @@ if($small == true) :
             </div>
         </section>
 
+
+		<section class="recommended">
+            <div class="container">
+
+            	<div class="small-12 columns">
+					<h3>you might also dig one of these...</h3>
+				</div>
+                
+			        <?php
+			        // get 3 similar posts
+			        $tags = $page->tags->slice(0, 3);
+			        foreach ($tags as $tag) :
+			        	$random = $pages->find("template=post,tags={$tag}"); 
+			        	$rand = $random->getRandom();
+			        ?>
+			        	
+
+						
+					<div class="small-12 med-4 columns">
+						    <div class="<?php echo getbgcolor($rand);?>  recipe" id='post-<?php echo $rand->id; ?>'>
+						        <h3 class="font-bold uppercase"> <?php echo "<a href='{$rand->url}'>{$rand->title}</a>"; ?></h3>
+						        <?php
+						        $out = '';
+									if(count($rand->categories)) {
+										$out = "<p class='categories'><span>" . __('Level:') . '</span> ';
+										foreach($rand->categories as $category) {
+											$out .= "<span class='font-bold'><a href='{$category->url}'>{$category->title}</a></span>, ";	
+										}
+										echo rtrim($out, ", ");
+									}
+									echo "<br>";
+									echo "Time: <span class='font-bold'>15 min</span>";
+									echo "<br>";
+									if(count($rand->tags)) {
+										$out = "<span>" . __('Tags:') . '</span> '; 
+										foreach($rand->tags as $tag) {
+											$out .= "<span class='font-bold'><a href='{$tag->url}'>{$tag->title}</a></span>, ";
+										}
+										echo rtrim($out, ", ") . "</p> ";
+									}
+
+									echo "<p>" . $rand->body . "&hellip; <a class='more' href='{$rand->url}'>" . __('View More') . "</a></p>";
+								?>
+								
+						    </div>
+						</div>
+
+
+						
+
+
+
+					<?php
+			        endforeach;
+			        ?>
+				
+			</div>
+		</section>
 
 <?php endif; ?>
