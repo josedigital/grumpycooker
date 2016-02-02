@@ -94,7 +94,7 @@ if($small == true) :
                     <h2 class="font-bold uppercase"><?php echo $page->title; ?></h2>
                     <p><?php echo $page->summary; ?></p>
 
-                    <?php if (count($page->images)) echo '<img src="'. $page->images->url . $page->images .'" alt="" class="'.$color.'">'; ?>
+                    <?php if (count($page->images)) echo '<img src="'. $page->images->url . '" alt="'.$page->images->description.'" class="'.$color.' recipe-image">'; ?>
                     <div class="container">
                     	<div class="small-12 med-6 columns">
 		                    <h3 class="font-bold uppercase">Ingredients</h3>
