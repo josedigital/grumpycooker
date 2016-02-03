@@ -24,7 +24,13 @@ nav
           &:hover
             color darken(light-green, 20%)
 
-
+.nav-logo
+  &.hide
+    opacity(0)
+  transition()
+  &.show
+    opacity(1)
+  
 
 .tagline
   color med-gray
@@ -34,6 +40,9 @@ nav
     width 100%
     height auto
     padding 1em
+
+p
+  font-size(18)
 
 .page-body
   h3

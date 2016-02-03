@@ -320,6 +320,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/site\/templates\/img\/grumpy-skull.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12166,
+		"inputAbbreviatedPath": "\/site\/templates\/img\/grumpy-skull.png",
+		"outputAbbreviatedPath": "\/site\/templates\/img\/grumpy-skull.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/site\/templates\/img\/grumpy.png": {
 		"fileType": 32768,
 		"ignore": 0,

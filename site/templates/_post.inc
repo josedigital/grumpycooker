@@ -19,7 +19,7 @@ if($page->browser_title) $browserTitle = $page->browser_title;
 $config->styles->add($config->urls->templates . 'css/index.css'); 
 
 // add our javascripts
-$config->scripts->prepend('http://code.jquery.com/jquery-1.7.2.min.js');
+$config->scripts->prepend('http://code.jquery.com/jquery-1.12.0.min.js');
 $config->scripts->add($config->urls->templates . 'js/main.js'); 
 
 ?>
@@ -47,23 +47,21 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
     <nav>
     	<?php echo renderNav('', $homepage->children->prepend($homepage), $page); ?>
     	<a href="<?php echo $config->urls->root; ?>">
-    	<img src="<?php echo $config->urls->templates; ?>img/grumpy-skull.png" alt="the grumpy cooker" class="nav-logo hide hide-small show-large">
+    	<img src="<?php echo $config->urls->templates; ?>img/grumpy.png" alt="the grumpy cooker" width="150" class="nav-logo hide hide-small show-large">
     	</a>
     </nav>
+
+
 
 
     <div class="main-content">
 
 
-    	<div class="container masthead">
-    		<div class="small-12 columns text-center">
-    			<?php echo "<a href='{$config->urls->root}'>"; ?>
-    			<img src="<?php echo $config->urls->templates; ?>img/grumpy.png" alt="the grumpy cooker" width="309">
-    			<?php echo "<h3 class='font-bold tagline'>{$homepage->summary}</h3>
-    			</a>"; ?>
-    		</div>
-    	</div><!-- /.masthead -->
 
+
+
+    	<?php echo $content; ?>
+            
 
 		<section class="search">
 			<div class="container">
@@ -77,12 +75,8 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
 						<input type='text' name='q' value='<?php echo $searchQuery; ?>' placeholder='<?php echo $searchPage->title; ?>'>
 					</form>	
 				</div>
-			</div>
-			
+			</div>			
 		</section>
-
-    	<?php echo $content; ?>
-            
 
 
 
@@ -90,21 +84,6 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
 
 
 
-	<?php
-	// if($page->editable()) include("./markup/admin.php"); // show an admin widget with edit+new links
-	// echo $subnav; 
-	?>
-	
-
-	<?php
-	// render widgets
-	// $widgets = $page->widgets; 
-	// if(!$widgets || !count($widgets)) $widgets = $homepage->widgets; 
-	// foreach($widgets as $widget) {
-	// 	echo "<div class='widget'>" . $widget->render() . "</div>";
-	// }
-
-	?>
 
 
 	<footer id="wrap-footer">

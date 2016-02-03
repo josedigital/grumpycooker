@@ -1194,6 +1194,15 @@ nav ul li a.meal-plans {
 nav ul li a.meal-plans:hover {
   color: #006c45;
 }
+.nav-logo {
+  transition: all 0.3s;
+}
+.nav-logo.hide {
+  opacity: 0;
+}
+.nav-logo.show {
+  opacity: 1;
+}
 .tagline {
   color: #bdbdbd;
 }
@@ -1201,6 +1210,10 @@ nav ul li a.meal-plans:hover {
   width: 100%;
   height: auto;
   padding: 1em;
+}
+p {
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 .page-body h3 {
   color: #212121;

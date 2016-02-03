@@ -1,1 +1,1 @@
-$(function(){var n=$(".nav-trigger"),a=$("body"),c=$(".scrolly"),o,i,s;o=function(n,a){i=function(){n.addClass(a)},s=function(){n.removeClass(a)},n.hasClass(a)?s():i()},n.on("click",function(){return o(a,"nav-active"),!1})});
+$(function(){var o,l=$(".nav-logo");$(document).scroll(function(){o=$(document).scrollTop(),o>150?l.removeClass("hide"):l.addClass("hide")})});

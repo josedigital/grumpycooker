@@ -67,17 +67,13 @@ if($small == true) :
                     <p><?php echo $page->summary; ?></p>
 
                     <?php if (count($page->images)) echo '<img src="'. $page->images->url . '" alt="'.$page->images->description.'" class="'.getbgcolor($page).' recipe-image">'; ?>
-                    <div class="container">
-                    	<div class="small-12 med-6 columns">
-		                    <h3 class="font-bold uppercase">Ingredients</h3>
-		                    <?php echo $page->ingredients; ?>
-                    	</div>
+                    
+                    <h3 class="font-bold uppercase">Ingredients</h3>
+                    <?php echo $page->ingredients; ?>
 
-                    	<div class="small-12 med-6 columns">
-		                    <h3 class="font-bold uppercase">Process</h3>
-		                    <?php echo $page->directions; ?>
-		                </div>
-                    </div>
+                    <h3 class="font-bold uppercase">Process</h3>
+                    <?php echo $page->directions; ?>
+                    
                 </div>
             </div>
         </section>
