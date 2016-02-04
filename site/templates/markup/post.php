@@ -64,7 +64,7 @@ if($small == true) :
             <div class="container">
                 <div class="small-12 med-8 med-push-2 columns">
                     <h2 class="font-bold uppercase"><?php echo $page->title; ?></h2>
-                    <p><?php echo $page->summary; ?></p>
+                    <p><?php echo $page->body; ?></p>
 
                     <?php if (count($page->images)) echo '<img src="'. $page->images->url . '" alt="'.$page->images->description.'" class="'.getbgcolor($page).' recipe-image">'; ?>
                     
