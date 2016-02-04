@@ -12,14 +12,8 @@ sess_*
 *.cache
 *.swp
 *.swo
-site-default/config-dev.php
-site-default/assets/logs
-site-default/assets/files
-site-default/assets/sessions
-site-default/assets/cache
-site-default/assets/installed.php
-site
-site-skyscrapers
+site/assets/*
+site/config.php
 .htaccess
 tmp
 upgrade.php
