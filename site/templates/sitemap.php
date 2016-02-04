@@ -4,26 +4,30 @@
  * Site map template
  *
  */
+ob_start();
 
 include_once("./blog.inc"); 
 
-$content = '';
 function sitemapListPage($page) {
 
-	$content .= "<li><a href='{$page->url}'>{$page->title}</a> ";	
+	echo "<li><a href='{$page->url}'>{$page->title}</a> ";	
 
 	if($page->numChildren) {
-		$content .= "<ul>";
+		echo "<ul>";
 		foreach($page->children as $child) sitemapListPage($child); 
-		$content .= "</ul>";
+		echo "</ul>";
 	}
 
-	$content .= "</li>";
+	echo "</li>";
 }
 
-$content .= "<ul class='sitemap'>";
+echo "<div class='container'><div class='small-12 med-8 med-push-2 columns'>";
+echo "<ul class='sitemap'>";
 sitemapListPage($pages->get("/")); 
-$content .= "</ul>";
+echo "</ul>";
+echo "</div></div>";
 
+
+$content = ob_get_clean();
 include("./main.inc"); 
 
