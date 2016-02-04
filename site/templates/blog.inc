@@ -107,7 +107,7 @@ function renderPosts($posts, $small = false) {
 		} else if(is_string($posts)) {
 			// selector string
 			$selector = $posts; 
-			$posts = wire('pages')->find("template=post, sort=date, $selector"); 
+			$posts = wire('pages')->find("template=post, sort=-date, $selector"); 
 
 		} else {
 			throw new WireException('renderPosts requires a PageArray, Page or selector string'); 
