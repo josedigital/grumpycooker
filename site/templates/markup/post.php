@@ -35,7 +35,7 @@ if($small == true) :
 				echo rtrim($out, ", ");
 			}
 			echo "<br>";
-			echo "Time: <span class='font-bold'>15 min</span>";
+			echo "Time: <span class='font-bold'>{$page->time->title}</span>";
 			echo "<br>";
 			if(count($page->tags)) {
 				$out = "<span>" . __('Tags:') . '</span> '; 
@@ -109,7 +109,7 @@ if($small == true) :
 										echo rtrim($out, ", ");
 									}
 									echo "<br>";
-									echo "Time: <span class='font-bold'>15 min</span>";
+									echo "Time: <span class='font-bold'>{$page->time->title}</span>";
 									echo "<br>";
 									if(count($rand->tags)) {
 										$out = "<span>" . __('Tags:') . '</span> '; 

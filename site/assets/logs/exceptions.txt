@@ -9,3 +9,7 @@
 2016-02-02 20:19:41	?	?	SQLSTATE[HY000] [2002] No such file or directory (in /wire/core/ProcessWire.php line 216)
 2016-02-02 20:20:04	?	?	Unable to load WireDatabasePDO - SQLSTATE[HY000] [2002] No such file or directory (in /wire/core/WireDatabasePDO.php line 113)
 2016-02-02 20:20:04	?	?	SQLSTATE[HY000] [2002] No such file or directory (in /wire/core/ProcessWire.php line 216)
+2016-02-04 13:54:47	?	?	Unable to load WireDatabasePDO - SQLSTATE[HY000] [2002] No such file or directory (in /wire/core/WireDatabasePDO.php line 113)
+2016-02-04 13:54:47	?	?	SQLSTATE[HY000] [2002] No such file or directory (in /wire/core/ProcessWire.php line 216)
+2016-02-04 13:54:56	?	?	Unable to load WireDatabasePDO - SQLSTATE[HY000] [2002] No such file or directory (in /wire/core/WireDatabasePDO.php line 113)
+2016-02-04 13:54:56	?	?	SQLSTATE[HY000] [2002] No such file or directory (in /wire/core/ProcessWire.php line 216)

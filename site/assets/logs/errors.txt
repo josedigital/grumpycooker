@@ -18,3 +18,5 @@
 2016-02-02 20:19:36	?	http://localhost/?/	Error: 	Exception: SQLSTATE[HY000] [2002] No such file or directory (in /Library/WebServer/Documents/gc/wire/core/ProcessWire.php line 216)
 2016-02-02 20:19:41	?	http://localhost/?/	Error: 	Exception: SQLSTATE[HY000] [2002] No such file or directory (in /Library/WebServer/Documents/gc/wire/core/ProcessWire.php line 216)
 2016-02-02 20:20:04	?	http://localhost/?/	Error: 	Exception: SQLSTATE[HY000] [2002] No such file or directory (in /Library/WebServer/Documents/gc/wire/core/ProcessWire.php line 216)
+2016-02-04 13:54:47	?	http://localhost/?/	Error: 	Exception: SQLSTATE[HY000] [2002] No such file or directory (in /Library/WebServer/Documents/gc/wire/core/ProcessWire.php line 216)
+2016-02-04 13:54:56	?	http://localhost/?/	Error: 	Exception: SQLSTATE[HY000] [2002] No such file or directory (in /Library/WebServer/Documents/gc/wire/core/ProcessWire.php line 216)
