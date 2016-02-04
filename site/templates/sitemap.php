@@ -5,6 +5,8 @@
  *
  */
 
+include_once("./blog.inc"); 
+
 $content = '';
 function sitemapListPage($page) {
 
