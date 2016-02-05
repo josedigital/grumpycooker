@@ -1272,6 +1272,22 @@ img.align_left {
 .recipe-page img {
   padding: 1em;
 }
+.MarkupPagerNav {
+  list-style: none;
+  text-align: center;
+}
+.MarkupPagerNav li {
+  display: inline;
+}
+.MarkupPagerNav li.MarkupPagerNavOn a {
+  color: #bdbdbd;
+}
+.MarkupPagerNav li a {
+  padding: 0.5em;
+}
+.MarkupPagerNav li a:hover {
+  text-decoration: underline;
+}
 @media only screen and (min-width: 740px) {
   .masthead {
     padding-top: 2em;
