@@ -55,7 +55,7 @@ if($small == true) :
 		}
 		?>
     </div>
-</div>
+</div><!-- /.12 .6 -->
 
 <?php else : ?>
 
@@ -97,33 +97,33 @@ if($small == true) :
 
 						
 					<div class="small-12 med-4 columns">
-						    <div class="<?php echo getbgcolor($rand);?>  recipe" id='post-<?php echo $rand->id; ?>'>
-						        <h3 class="font-bold uppercase"> <?php echo "<a href='{$rand->url}'>{$rand->title}</a>"; ?></h3>
-						        <?php
-						        $out = '';
-									if(count($rand->categories)) {
-										$out = "<p class='categories'><span>" . __('Level:') . '</span> ';
-										foreach($rand->categories as $category) {
-											$out .= "<span class='font-bold'><a href='{$category->url}'>{$category->title}</a></span>, ";	
-										}
-										echo rtrim($out, ", ");
+					    <div class="<?php echo getbgcolor($rand);?>  recipe" id='post-<?php echo $rand->id; ?>'>
+					        <h3 class="font-bold uppercase"> <?php echo "<a href='{$rand->url}'>{$rand->title}</a>"; ?></h3>
+					        <?php
+					        $out = '';
+								if(count($rand->categories)) {
+									$out = "<p class='categories'><span>" . __('Level:') . '</span> ';
+									foreach($rand->categories as $category) {
+										$out .= "<span class='font-bold'><a href='{$category->url}'>{$category->title}</a></span>, ";	
 									}
-									echo "<br>";
-									echo "Time: <span class='font-bold'>{$page->time->title}</span>";
-									echo "<br>";
-									if(count($rand->tags)) {
-										$out = "<span>" . __('Tags:') . '</span> '; 
-										foreach($rand->tags as $tag) {
-											$out .= "<span class='font-bold'><a href='{$tag->url}'>{$tag->title}</a></span>, ";
-										}
-										echo rtrim($out, ", ") . "</p> ";
+									echo rtrim($out, ", ");
+								}
+								echo "<br>";
+								echo "Time: <span class='font-bold'>{$page->time->title}</span>";
+								echo "<br>";
+								if(count($rand->tags)) {
+									$out = "<span>" . __('Tags:') . '</span> '; 
+									foreach($rand->tags as $tag) {
+										$out .= "<span class='font-bold'><a href='{$tag->url}'>{$tag->title}</a></span>, ";
 									}
+									echo rtrim($out, ", ") . "</p> ";
+								}
 
-									echo "<p>" . $rand->body . "&hellip; <a class='more' href='{$rand->url}'>" . __('View More') . "</a></p>";
-								?>
-								
-						    </div>
-						</div>
+								echo "<p>" . $rand->body . "&hellip; <a class='more' href='{$rand->url}'>" . __('View More') . "</a></p>";
+							?>
+							
+					    </div>
+					</div><!-- /.12 .4 -->
 
 
 						
@@ -134,7 +134,7 @@ if($small == true) :
 			        endforeach;
 			        ?>
 				
-			</div>
+			</div><!-- /.container -->
 		</section>
 
 <?php endif; ?>

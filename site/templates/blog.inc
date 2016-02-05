@@ -134,9 +134,9 @@ function renderPosts($posts, $small = false) {
 
 	// if there are more posts than the specified limit, then output pagination
 	if($posts->getLimit() < $posts->getTotal()) 
-		$out .= '<div class="small-12 columns">';
+		$out .= '<div class="container"><div class="small-12 columns">';
 		$out .= $posts->renderPager();
-		$out .= '</div>';
+		$out .= '</div></div>';
 	
 	return $out;	
 }
