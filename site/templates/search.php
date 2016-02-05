@@ -16,7 +16,7 @@ if($q = $sanitizer->selectorValue($input->get->q)) {
 	$input->whitelist('q', $q); 
 
 	// Search the title, body fields for our query text.
-	$posts = $pages->find("template=post, title|ingredients|process|body%=$q, limit=10"); 
+	$posts = $pages->find("template=post, title|ingredients|directions|body%=$q, limit=10"); 
 	$total = $posts->getTotal();
 	$query = htmlentities($q, ENT_QUOTES, "UTF-8");
 
