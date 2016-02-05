@@ -1207,9 +1207,10 @@ nav ul li a.meal-plans:hover {
   color: #bdbdbd;
 }
 .site-search-form input {
-  width: 100%;
+  color: #c62828;
   height: auto;
   padding: 1em;
+  width: 100%;
 }
 p {
   font-size: 18px;
