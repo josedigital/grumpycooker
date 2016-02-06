@@ -1270,6 +1270,9 @@ img.align_left {
 .recipe-page h3 {
   color: #f39623;
 }
+.recipe-page h4 {
+  color: #8b1c58;
+}
 .recipe-page img {
   padding: 1em;
 }
