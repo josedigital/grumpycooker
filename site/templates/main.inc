@@ -85,26 +85,34 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
             
 
 
-
-    </div><!-- /.main-content -->
-
-
-
 	<?php
 	// if($page->editable()) include("./markup/admin.php"); // show an admin widget with edit+new links
 	// echo $subnav; 
 	?>
 	
+		<section class="widgets">
+			<div class="container">
+				<div class="small-12 columns">
+					<?php
+					// render widgets
+					// $widgets = $homepage->widgets; 
+					// if(!$widgets || !count($widgets)) $widgets = $homepage->widgets; 
+					// foreach($widgets as $widget) {
+					// 	echo "<div class='widget'>" . $widget->name . "</div>";
+					// }
+					// just get 'recept-posts' widget
+					// echo $homepage->widgets->get('recent-posts')->render();
+					?>
+				</div>
+			</div>
+		</section>
 
-	<?php
-	// render widgets
-	// $widgets = $page->widgets; 
-	// if(!$widgets || !count($widgets)) $widgets = $homepage->widgets; 
-	// foreach($widgets as $widget) {
-	// 	echo "<div class='widget'>" . $widget->render() . "</div>";
-	// }
 
-	?>
+
+    </div><!-- /.main-content -->
+
+
+
 
 
 	<footer id="wrap-footer">
