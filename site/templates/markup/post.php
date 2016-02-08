@@ -83,7 +83,7 @@ if($small == true) :
             <div class="container">
 
             	<div class="small-12 columns">
-					<h3>you might also dig one of these...</h3>
+					<h3 class="uppercase">you might also dig one of these...</h3>
 				</div>
                 
 			        <?php
