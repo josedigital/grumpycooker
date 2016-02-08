@@ -30,10 +30,11 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="plant-based, mexican, recipes, vegan, easy, cauliflower, tacos, rice, beans, tortillas, guisados, healthy, no-oil, low-oil">
     <?php if($homepage->summary) echo '<meta name="summary" content="'.$homepage->summary.'">'; ?>
     
     <title><?php echo $browserTitle; ?></title>
-    <?php if($page->summary) echo "<meta name='description' content='{$page->summary}' />"; ?>
+    <?php if($page->summary) echo "<meta name='description' content='{$page->summary} And mostly Mexican influenced.' />"; ?>
 	<?php foreach($config->styles as $key => $file) echo "\n\t<link rel='stylesheet' type='text/css' href='$file'>"; ?>
 </head>
 
