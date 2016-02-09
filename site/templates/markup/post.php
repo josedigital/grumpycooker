@@ -119,7 +119,7 @@ if($small == true) :
 									echo rtrim($out, ", ") . "</p> ";
 								}
 
-								echo "<p>" . $rand->body . "&hellip; <a class='more' href='{$rand->url}'>" . __('View More') . "</a></p>";
+								echo "<p>" . $rand->body . "</p><p><a class='view inverse button' href='{$rand->url}'>" . __('View Recipe') . "</a></p>";
 							?>
 							
 					    </div>
