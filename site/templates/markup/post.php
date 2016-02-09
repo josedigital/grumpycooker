@@ -47,7 +47,7 @@ if($small == true) :
 		?>
 		<?php 
 		if($small) {
-			echo "<p>" . $page->summary . "</p><p><a class='view inverse button uppercase' href='{$page->url}'>" . __('View Recipe') . "</a></p>";
+			echo "<p>" . $page->summary . "</p><p><a class='view inverse button font-bold uppercase' href='{$page->url}'>" . __('View Recipe') . "</a></p>";
 		} else {
 			echo $page->body; 
 			// if the post has images and no <img> tags in the body, then make it a gallery
@@ -119,7 +119,7 @@ if($small == true) :
 									echo rtrim($out, ", ") . "</p> ";
 								}
 
-								echo "<p>" . $rand->body . "</p><p><a class='view inverse button' href='{$rand->url}'>" . __('View Recipe') . "</a></p>";
+								echo "<p>" . $rand->body . "</p><p><a class='view inverse button font-bold' href='{$rand->url}'>" . __('View Recipe') . "</a></p>";
 							?>
 							
 					    </div>
