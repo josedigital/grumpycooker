@@ -32,15 +32,6 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/site\/assets\/active.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/site\/assets\/active.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/site\/assets\/files\/1075\/fp.0x100.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -155,27 +146,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/site\/modules\/MarkupSitemapXML\/README.md": {
-		"criticStyle": 0,
-		"enableFootnotes": 1,
-		"enableLabels": 1,
-		"enableSmartQuotes": 1,
-		"escapeLineBreaks": 0,
-		"fileType": 4096,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/site\/modules\/MarkupSitemapXML\/README.md",
-		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/site\/modules\/MarkupSitemapXML\/README.html",
-		"outputFormat": 0,
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"parseMetadata": 1,
-		"processHTML": 0,
-		"randomFootnoteNumbers": 0,
-		"useCompatibilityMode": 0
 		},
 	"\/site\/modules\/MarkupTwitterFeed\/README.md": {
 		"criticStyle": 0,
@@ -11664,7 +11634,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Alex Rodriguez",
+"lastSavedByUser": "alex",
 "manualImportLinks": {
 	},
 "projectAttributes": {

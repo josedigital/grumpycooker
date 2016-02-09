@@ -118,8 +118,9 @@ function renderPosts($posts, $small = false) {
 
 		if(empty($page->summary)) {
 			// summary is blank so we auto-generate a summary from the body
-			$summary = strip_tags(substr($page->body, 0, 450));
-			$page->summary = substr($summary, 0, strrpos($summary, ' '));
+			$summary = strip_tags(substr($page->body, 0, 1450));
+			// $page->summary = substr($summary, 0, strrpos($summary, ' '));
+			$page->summary = $summary;
 		}
 
 		// set a couple new fields that our output will use

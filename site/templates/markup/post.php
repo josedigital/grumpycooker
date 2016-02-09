@@ -47,7 +47,7 @@ if($small == true) :
 		?>
 		<?php 
 		if($small) {
-			echo "<p>" . $page->summary . "&hellip; <a class='more' href='{$page->url}'>" . __('View More') . "</a></p>";
+			echo "<p>" . $page->summary . " <a class='view' href='{$page->url}'><br>" . __('View Recipe') . "</a></p>";
 		} else {
 			echo $page->body; 
 			// if the post has images and no <img> tags in the body, then make it a gallery
