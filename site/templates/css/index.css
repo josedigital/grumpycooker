@@ -1264,6 +1264,10 @@ img.align_left {
 .recommended h3 {
   color: #212121;
 }
+.view {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
 .recipe-page h2,
 .recipe-page p,
 .recipe-page ul {
