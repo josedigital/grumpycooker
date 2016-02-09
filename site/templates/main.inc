@@ -60,7 +60,7 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
     		<div class="small-12 columns text-center">
     			<?php echo "<a href='{$config->urls->root}'>"; ?>
     			<img src="<?php echo $config->urls->templates; ?>img/grumpy.png" alt="the grumpy cooker" width="309">
-    			<?php echo "<h3 class='font-bold tagline'>{$homepage->summary}</h3>
+    			<?php echo "<h1 class='font-bold tagline'>{$homepage->summary}</h1>
     			</a>"; ?>
     		</div>
     	</div><!-- /.masthead -->
