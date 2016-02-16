@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald:400,300,700|Raleway:400,300,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic,300italic,700italic,800,800italic|Roboto+Slab:400,700|Lora:400,700|Oswald:400,700,300");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,300,700|Raleway:400,300,700|Lora:400,700");
 *,
 *:before,
 *:after {
@@ -152,7 +151,7 @@ video {
   vertical-align: baseline;
 }
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lora', serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 28px;
