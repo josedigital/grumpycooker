@@ -66,6 +66,7 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
 		<section class="search">
 			<div class="container">
 				<div class="small-12 med-8 med-push-2 columns">
+
 					<?php
 					$searchPage = wire('pages')->get('template=search');
 					$searchQuery = htmlentities(wire('input')->whitelist('q'), ENT_QUOTES, "UTF-8");
