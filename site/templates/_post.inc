@@ -43,7 +43,7 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
 	
 
 	
-<body class='<?php echo $page->template.' '.$page->name;?> <?php echo getbgcolor($page);?>'>
+<body class='<?php echo $page->template.' '.$page->name;?>'>
     <nav>
     	<?php echo renderNav('', $homepage->children->prepend($homepage), $page); ?>
     	<a href="<?php echo $config->urls->root; ?>">
