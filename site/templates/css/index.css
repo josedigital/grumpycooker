@@ -1214,7 +1214,7 @@ nav ul li a.meal-plans:hover {
   font-size: 1.5rem;
 }
 .site-search-form input {
-  color: #fff;
+  color: #c62828;
   height: auto;
   padding: 1em;
   width: 100%;
@@ -1315,11 +1315,6 @@ img.align_left {
 .next-prev-posts a color white:hover {
   color: rgba(255,255,255,0.4);
 }
-@media only screen and (min-width: 740px) {
-  .masthead {
-    padding-top: 2em;
-  }
-}
 @media only screen and (min-width: 980px) {
   nav {
     position: fixed;
@@ -1331,6 +1326,10 @@ img.align_left {
   }
   nav ul li a {
     padding: 0.25em;
+  }
+  .masthead {
+    height: 100vh;
+    padding-top: 30vh;
   }
 }
 .no-margin {

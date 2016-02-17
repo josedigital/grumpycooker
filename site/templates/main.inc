@@ -63,12 +63,7 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
     			<?php echo "<h1 class='font-bold tagline'>{$homepage->summary}</h1>
     			</a>"; ?>
     		</div>
-    	</div><!-- /.masthead -->
-
-
-		<section class="search">
-			<div class="container">
-				<div class="small-12 med-8 med-push-2 columns">
+    		<div class="small-12 med-8 med-push-2 columns">
 					<?php
 					$searchPage = wire('pages')->get('template=search');
 					$searchQuery = htmlentities(wire('input')->whitelist('q'), ENT_QUOTES, "UTF-8");
@@ -78,9 +73,10 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
 						<input type='text' name='q' value='<?php echo $searchQuery; ?>' placeholder='<?php echo $searchPage->title; ?>'>
 					</form>	
 				</div>
-			</div>
-			
-		</section>
+    	</div><!-- /.masthead -->
+
+
+
 
     	<?php echo $content; ?>
             
