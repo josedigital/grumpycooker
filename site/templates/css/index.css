@@ -1250,6 +1250,7 @@ img.align_left {
 .recommended .recipe {
   height: 340px;
   padding: 2em;
+  border-radius: 6px;
 }
 .recipes-list .recipe a,
 .recommended .recipe a {
@@ -1270,7 +1271,7 @@ img.align_left {
 .recipe-page h2,
 .recipe-page p,
 .recipe-page ul {
-  color: #212121;
+  color: #fff;
 }
 .recipe-page h3 {
   color: #f39623;
@@ -1280,6 +1281,7 @@ img.align_left {
 }
 .recipe-page img {
   padding: 1em;
+  border-radius: 6px;
 }
 .MarkupPagerNav {
   list-style: none;

@@ -41,5 +41,5 @@ $subnavItems = array(
 
 $subnav .= renderNav(__('See Also'), $subnavItems); 
 
-include("./main.inc"); 
+include("./_post.inc"); 
 
