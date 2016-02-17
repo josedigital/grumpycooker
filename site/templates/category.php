@@ -18,11 +18,9 @@ if($input->urlSegment1) {
 
 $n = $posts->getTotal();
 $headline = $page->title;
-$content = '<section class="recipes-list">
-            <div class="container">';
+$content = '<section class="recipes-list">';
 $content .= $page->body . renderPosts($posts, true);
-$content .= '</div>
-        </section>';
+$content .= '</section>';
 $subnav = renderNav($page->parent->title, $page->siblings, $page); 
 
 include("./main.inc"); 
