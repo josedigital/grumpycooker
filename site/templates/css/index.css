@@ -164,7 +164,7 @@ p {
   margin: 0 0 1em 0;
 }
 a {
-  color: #c62828;
+  color: #fff;
   background: transparent;
   text-decoration: none;
   transition: all 0.3s;
@@ -172,7 +172,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
-  color: #771818;
+  color: #999;
 }
 h1,
 .h1,
@@ -561,91 +561,91 @@ button.inverse:hover,
 }
 button.inverse.primary,
 .button.inverse.primary {
-  border-color: #c62828;
-  color: #c62828;
+  border-color: #fff;
+  color: #fff;
   background-color: transparent;
 }
 button.inverse.primary:hover,
 .button.inverse.primary:hover {
-  border-color: #c62828;
-  color: #c62828;
-  background-color: rgba(198,40,40,0.1);
+  border-color: #fff;
+  color: #fff;
+  background-color: rgba(255,255,255,0.1);
 }
 button.inverse.secondary,
 .button.inverse.secondary {
-  border-color: #2828c6;
-  color: #2828c6;
+  border-color: #fff;
+  color: #fff;
   background-color: transparent;
 }
 button.inverse.secondary:hover,
 .button.inverse.secondary:hover {
-  border-color: #2828c6;
-  color: #2828c6;
-  background-color: rgba(40,40,198,0.1);
+  border-color: #fff;
+  color: #fff;
+  background-color: rgba(255,255,255,0.1);
 }
 button.inverse.tertiary,
 .button.inverse.tertiary {
-  border-color: #28c628;
-  color: #28c628;
+  border-color: #fff;
+  color: #fff;
   background-color: transparent;
 }
 button.inverse.tertiary:hover,
 .button.inverse.tertiary:hover {
-  border-color: #28c628;
-  color: #28c628;
-  background-color: rgba(40,198,40,0.1);
+  border-color: #fff;
+  color: #fff;
+  background-color: rgba(255,255,255,0.1);
 }
 button.inverse.complementary,
 .button.inverse.complementary {
-  border-color: #28c6c6;
-  color: #28c6c6;
+  border-color: #fff;
+  color: #fff;
   background-color: transparent;
 }
 button.inverse.complementary:hover,
 .button.inverse.complementary:hover {
-  border-color: #28c6c6;
-  color: #28c6c6;
-  background-color: rgba(40,198,198,0.1);
+  border-color: #fff;
+  color: #fff;
+  background-color: rgba(255,255,255,0.1);
 }
 button.primary,
 .button.primary {
-  background-color: #c62828;
-  border-color: #c62828;
+  background-color: #fff;
+  border-color: #fff;
   color: #fff;
 }
 button.primary:hover,
 .button.primary:hover {
-  background: #8b1c1c;
+  background: #b3b3b3;
 }
 button.secondary,
 .button.secondary {
-  background-color: #2828c6;
-  border-color: #2828c6;
+  background-color: #fff;
+  border-color: #fff;
   color: #fff;
 }
 button.secondary:hover,
 .button.secondary:hover {
-  background: #1c1c8b;
+  background: #b3b3b3;
 }
 button.tertiary,
 .button.tertiary {
-  background-color: #28c628;
-  border-color: #28c628;
+  background-color: #fff;
+  border-color: #fff;
   color: #fff;
 }
 button.tertiary:hover,
 .button.tertiary:hover {
-  background: #1c8b1c;
+  background: #b3b3b3;
 }
 button.complementary,
 .button.complementary {
-  background-color: #28c6c6;
-  border-color: #28c6c6;
+  background-color: #fff;
+  border-color: #fff;
   color: #fff;
 }
 button.complementary:hover,
 .button.complementary:hover {
-  background: #1c8b8b;
+  background: #b3b3b3;
 }
 button.disabled,
 .button.disabled,
@@ -692,7 +692,7 @@ button.pill:after,
   transition: all 0.3s;
 }
 .button-link {
-  color: #c62828;
+  color: #fff;
   text-decoration: underline;
   border: 0;
   background: transparent;
@@ -1175,11 +1175,17 @@ nav ul li {
 nav ul li a {
   padding: 0.25em;
 }
+nav ul li a.home {
+  color: #c62828;
+}
+nav ul li a.home:hover {
+  color: #9e2020;
+}
 nav ul li a.about {
-  color: #f39623;
+  color: #dc6542;
 }
 nav ul li a.about:hover {
-  color: #d37a0c;
+  color: #c14724;
 }
 nav ul li a.tips {
   color: #8b1c58;
@@ -1188,10 +1194,10 @@ nav ul li a.tips:hover {
   color: #6f1646;
 }
 nav ul li a.meal-plans {
-  color: #008756;
+  color: #8dab25;
 }
 nav ul li a.meal-plans:hover {
-  color: #006c45;
+  color: #060;
 }
 .nav-logo {
   transition: all 0.3s;
@@ -1208,7 +1214,7 @@ nav ul li a.meal-plans:hover {
   font-size: 1.5rem;
 }
 .site-search-form input {
-  color: #c62828;
+  color: #fff;
   height: auto;
   padding: 1em;
   width: 100%;
@@ -1228,23 +1234,32 @@ img.align_left {
   margin-right: 1em;
   margin-bottom: 1em;
 }
-.orange {
-  background-color: #f39623;
+.dark-purple {
+  background-color: #8b1c58;
 }
 .light-purple {
   background-color: #c42275;
 }
-.dark-purple {
-  background-color: #8b1c58;
-}
-.light-green {
-  background-color: #008756;
+.blue {
+  background-color: #296578;
 }
 .dark-green {
   background-color: #244131;
 }
+.light-green {
+  background-color: #8dab25;
+}
+.yellow {
+  background-color: #d1c92d;
+}
+.orange {
+  background-color: #dc6542;
+}
 .pink {
-  background-color: #f299c7;
+  background-color: #cb485d;
+}
+.red {
+  background-color: #c62828;
 }
 .recipes-list .recipe,
 .recommended .recipe {
@@ -1274,7 +1289,7 @@ img.align_left {
   color: #212121;
 }
 .recipe-page h3 {
-  color: #f39623;
+  color: #dc6542;
 }
 .recipe-page h4 {
   color: #8b1c58;

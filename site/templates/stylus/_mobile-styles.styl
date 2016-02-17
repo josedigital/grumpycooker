@@ -11,6 +11,10 @@ nav
       display inline-block
       a
         padding 0.25em
+        &.home
+          color red
+          &:hover
+            color darken(red, 20%)
         &.about
           color orange
           &:hover
@@ -22,7 +26,8 @@ nav
         &.meal-plans
           color light-green
           &:hover
-            color darken(light-green, 20%)
+            color darken(green, 20%)
+
 
 .nav-logo
   &.hide
@@ -60,18 +65,25 @@ img
 
 //  RECIPES-LIST
 // ===========
-.orange
-  background-color orange
-.light-purple
-  background-color light-purple
 .dark-purple
   background-color dark-purple
-.light-green
-  background-color light-green
+.light-purple
+  background-color light-purple
+.blue
+  background-color blue
 .dark-green
   background-color dark-green
+.light-green
+  background-color light-green
+.yellow
+  background-color yellow
+.orange
+  background-color orange
 .pink
   background-color pink
+.red
+  background-color red
+
 
 .recipes-list, .recommended
   .recipe
