@@ -1280,7 +1280,6 @@ img.align_left {
   color: #8b1c58;
 }
 .recipe-page img {
-  padding: 1em;
   border-radius: 6px;
 }
 .MarkupPagerNav {
@@ -1298,6 +1297,9 @@ img.align_left {
 }
 .MarkupPagerNav li a:hover {
   text-decoration: underline;
+}
+.next-prev-posts a color white:hover {
+  color: rgba(255,255,255,0.4);
 }
 @media only screen and (min-width: 740px) {
   .masthead {
