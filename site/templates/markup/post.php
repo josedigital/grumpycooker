@@ -22,9 +22,20 @@ if($numComments > 0) $numCommentsStr = sprintf(_n('%d Comment', '%d Comments', $
 
 if($small == true) :
 ?>
-<div class="small-12 med-6 columns">
-    <div class="<?php echo getbgcolor($page);?> recipe" id='post-<?php echo $page->id; ?>'>
+<div class="small-12 columns <?php echo getbgcolor($page);?>">
+    <div class="recipe text-center" id='post-<?php echo $page->id; ?>'>
         <h3 class="font-bold uppercase"> <?php echo "<a href='{$page->url}'>{$page->title}</a>"; ?></h3>
+		<?php 
+		if($small) {
+			echo "<p>" . $page->summary . "</p><p><a class='view inverse button font-bold uppercase' href='{$page->url}'>" . __('View Recipe') . "</a></p>";
+		} else {
+			echo $page->body; 
+			// if the post has images and no <img> tags in the body, then make it a gallery
+			if(count($page->images) && strpos($page->body, '<img ') === false) include("./gallery.php"); 
+		}
+		?>
+
+		<?php if (count($page->images)) echo '<img src="'. $page->images->url . '" alt="'.$page->images->description.'" class="'.getbgcolor($page).' recipe-image">'; ?>
         <?php
         $out = '';
 			if(count($page->categories)) {
@@ -44,15 +55,6 @@ if($small == true) :
 				}
 				echo rtrim($out, ", ") . "</p> ";
 			}
-		?>
-		<?php 
-		if($small) {
-			echo "<p>" . $page->summary . "</p><p><a class='view inverse button font-bold uppercase' href='{$page->url}'>" . __('View Recipe') . "</a></p>";
-		} else {
-			echo $page->body; 
-			// if the post has images and no <img> tags in the body, then make it a gallery
-			if(count($page->images) && strpos($page->body, '<img ') === false) include("./gallery.php"); 
-		}
 		?>
     </div>
 </div><!-- /.12 .6 -->

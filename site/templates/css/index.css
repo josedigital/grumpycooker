@@ -1263,7 +1263,6 @@ img.align_left {
 }
 .recipes-list .recipe,
 .recommended .recipe {
-  height: 340px;
   padding: 2em;
   border-radius: 6px;
 }
