@@ -35,7 +35,7 @@ if($small) {
 	$total = $posts->getTotal();
 
 	if($total) echo "
-		<div class='small-12 columns'>
+		<div id='recipes' class='small-12 columns'>
 			<h3>" . sprintf(__('Recipes %1$d to %2$d of %3$d'), $start, $end, $total) . "{$modifier}</h3>
 		</div>";
 }

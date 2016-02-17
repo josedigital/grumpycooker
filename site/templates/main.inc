@@ -20,6 +20,7 @@ $config->styles->add($config->urls->templates . 'css/index.css');
 
 // add our javascripts
 $config->scripts->prepend('http://code.jquery.com/jquery-1.7.2.min.js');
+$config->scripts->add($config->urls->templates . 'js/vendor/jquery.scrolly.min.js'); 
 $config->scripts->add($config->urls->templates . 'js/main.js'); 
 
 ?>
@@ -64,15 +65,18 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
     			</a>"; ?>
     		</div>
     		<div class="small-12 med-8 med-push-2 columns">
-					<?php
-					$searchPage = wire('pages')->get('template=search');
-					$searchQuery = htmlentities(wire('input')->whitelist('q'), ENT_QUOTES, "UTF-8");
-					?>
+				<?php
+				$searchPage = wire('pages')->get('template=search');
+				$searchQuery = htmlentities(wire('input')->whitelist('q'), ENT_QUOTES, "UTF-8");
+				?>
 
-					<form id='site-search-form' class='site-search-form' action='<?php echo $searchPage->url; ?>' method='get'>
-						<input type='text' name='q' value='<?php echo $searchQuery; ?>' placeholder='<?php echo $searchPage->title; ?>'>
-					</form>	
-				</div>
+				<form id='site-search-form' class='site-search-form' action='<?php echo $searchPage->url; ?>' method='get'>
+					<input type='text' name='q' value='<?php echo $searchQuery; ?>' placeholder='<?php echo $searchPage->title; ?>'>
+				</form>	
+			</div>
+
+			<a href="#recipes" class="goto-next scrolly">Begin</a>
+
     	</div><!-- /.masthead -->
 
 

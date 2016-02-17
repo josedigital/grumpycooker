@@ -1219,6 +1219,29 @@ nav ul li a.meal-plans:hover {
   padding: 1em;
   width: 100%;
 }
+.goto-next {
+  background-color: #dc6542;
+  background-image: url("../../templates/img/arrow.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 0;
+  bottom: 3em;
+  display: block;
+  height: 4em;
+  left: 50%;
+  line-height: 4empx;
+  line-height: 0.25emrem;
+  margin-left: -2em;
+  overflow: hidden;
+  position: absolute;
+  text-indent: 4em;
+  white-space: nowrap;
+  width: 4em;
+}
+.goto-next:hover {
+  background-color: rgba(144,144,144,0.15);
+}
 p {
   font-size: 18px;
   font-size: 1.125rem;

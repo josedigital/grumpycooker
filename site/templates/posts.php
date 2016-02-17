@@ -16,11 +16,9 @@ if($input->urlSegment1) {
 } else {
 	// display paginated blog list
 	$headline = $page->get('headline|title');
-	$content = '<section class="recipes-list">
-	            <div class="container">';
+	$content = '<section class="recipes-list">';
 	$content .= renderPosts("limit=10", true); 
-	$content .= '</div>
-	        </section>';
+	$content .= '</section>';
 	include("./main.inc"); 
 }
 

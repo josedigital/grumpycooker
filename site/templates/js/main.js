@@ -46,7 +46,7 @@ $(function() {
 
 
 
-
+  $('.scrolly').scrolly();
 
 
 
