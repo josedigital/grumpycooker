@@ -1289,6 +1289,25 @@ img.align_left {
 .red {
   background-color: #c62828;
 }
+.recipes-list,
+.posts.posts-small,
+.pagination {
+  *zoom: 1;
+}
+.recipes-list:before,
+.posts.posts-small:before,
+.pagination:before,
+.recipes-list:after,
+.posts.posts-small:after,
+.pagination:after {
+  content: " ";
+  display: table;
+}
+.recipes-list:after,
+.posts.posts-small:after,
+.pagination:after {
+  clear: both;
+}
 .recipes-list .recipe,
 .recommended .recipe {
   padding: 2em;
@@ -1332,7 +1351,7 @@ img.align_left {
   display: inline;
 }
 .MarkupPagerNav li.MarkupPagerNavOn a {
-  color: #bdbdbd;
+  color: #8b1c58;
 }
 .MarkupPagerNav li a {
   padding: 0.5em;
