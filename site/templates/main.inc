@@ -75,7 +75,7 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
 				</form>	
 			</div>
 
-			<a href="#recipes" class="goto-next scrolly">Begin</a>
+			<a href="#recipes" class="goto-next scrolly hide-small show-large">Begin</a>
 
     	</div><!-- /.masthead -->
 
