@@ -296,7 +296,7 @@ function getbgcolor($page) {
 
 	switch ($page->bgcolor) {
 		case '1':
-			return $color = 'orange';
+			return $color = 'dark-purple';
 			break;
 		
 		case '2':
@@ -304,23 +304,31 @@ function getbgcolor($page) {
 			break;
 
 		case '3':
-			return $color = 'dark-purple';
+			return $color = 'blue';
 			break;
 
 		case '4':
-			return $color = 'light-green';
-			break;
-
-		case '5':
 			return $color = 'dark-green';
 			break;
 
+		case '5':
+			return $color = 'light-green';
+			break;
+
 		case '6':
+			return $color = 'yellow';
+			break;
+
+		case '7':
+			return $color = 'orange';
+			break;
+
+		case '8':
 			return $color = 'pink';
 			break;
 
 		default:
-			return $color = 'pink';
+			return $color = 'red';
 			break;
 	}
 
