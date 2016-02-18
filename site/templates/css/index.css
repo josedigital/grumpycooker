@@ -1213,6 +1213,12 @@ nav ul li a.meal-plans:hover {
   font-size: 24px;
   font-size: 1.5rem;
 }
+.top-title {
+  color: #212121;
+}
+.results-text {
+  color: #c62828;
+}
 .site-search-form input {
   color: #c62828;
   height: auto;

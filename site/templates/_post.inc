@@ -56,7 +56,16 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
 
     <div class="main-content">
 
-
+		
+		<?php if($page->template == 'search') : ?>
+			<div class="container">
+				<div class="small-12 med-8 med-push-2 columns text-center">
+					<h1 class="top-title">All results for 
+						<br>
+						<span class="results-text"><?=$q;?></span></h1>
+				</div>
+			</div>
+		<?php endif; ?>
 
 
 
