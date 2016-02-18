@@ -35,7 +35,7 @@ if($small == true) :
 		}
 		?>
 
-		<?php if (count($page->images)) echo '<img src="'. $page->images->url . '" alt="'.$page->images->description.'" class="'.getbgcolor($page).' recipe-image">'; ?>
+		<?php if (count($page->images)) echo '<a href="'.$page->url.'"><img src="'. $page->images->url . '" alt="'.$page->images->description.'" class="'.getbgcolor($page).' recipe-image"></a>'; ?>
         <?php
         $out = '';
 			if(count($page->categories)) {
