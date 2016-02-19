@@ -164,7 +164,7 @@ p {
   margin: 0 0 1em 0;
 }
 a {
-  color: #fff;
+  color: #c42275;
   background: transparent;
   text-decoration: none;
   transition: all 0.3s;
@@ -172,7 +172,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
-  color: #999;
+  color: #761446;
 }
 h1,
 .h1,
@@ -692,7 +692,7 @@ button.pill:after,
   transition: all 0.3s;
 }
 .button-link {
-  color: #fff;
+  color: #c42275;
   text-decoration: underline;
   border: 0;
   background: transparent;
