@@ -20,6 +20,7 @@ $config->styles->add($config->urls->templates . 'css/index.css');
 
 // add our javascripts
 $config->scripts->prepend('http://code.jquery.com/jquery-1.12.0.min.js');
+$config->scripts->add($config->urls->templates . 'js/vendor/jquery.scrolly.min.js'); 
 $config->scripts->add($config->urls->templates . 'js/main.js'); 
 
 ?>
