@@ -1372,7 +1372,6 @@ img.align_left {
   nav {
     position: fixed;
     padding: 1em;
-    text-align: left;
   }
   nav ul li {
     display: block;
