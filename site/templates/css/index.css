@@ -1280,6 +1280,9 @@ img.align_left {
 .yellow {
   background-color: #d1c92d;
 }
+.yellow p {
+  color: rgba(22,22,22,0.9);
+}
 .orange {
   background-color: #dc6542;
 }
