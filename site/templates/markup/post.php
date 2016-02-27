@@ -25,7 +25,7 @@ if($small == true) :
     	$session->gridview = $input->post['gridview'];
     	echo $gridview;
 	}
-	$gridview = ( $session->gridview == 'fa fa-2x fa-square' ) ? '' : ' med-4';
+	$gridview = ( $session->gridview == 'fa fa-2x fa-square' ) ? ' med-4' : '';
 
 ?>
 <div class="small-12 columns gridv <?php echo getbgcolor($page); echo $gridview; ?>">
