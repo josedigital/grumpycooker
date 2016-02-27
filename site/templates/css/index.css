@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,300,700|Raleway:400,300,700|Lora:400,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 *,
 *:before,
 *:after {
@@ -1370,6 +1371,15 @@ img.align_left {
 }
 .next-prev-posts a color white:hover {
   color: rgba(255,255,255,0.4);
+}
+@media only screen and (min-width: 740px) {
+  .gridv {
+    height: auto;
+    transition: all 0.3s;
+  }
+  .m-t-1 {
+    margin-top: 1em;
+  }
 }
 @media only screen and (min-width: 980px) {
   nav {
