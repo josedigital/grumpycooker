@@ -1374,7 +1374,7 @@ img.align_left {
 }
 @media only screen and (min-width: 740px) {
   .gridv {
-    height: auto;
+    height: 600px;
     transition: all 0.3s;
   }
   .m-t-1 {
