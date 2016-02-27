@@ -333,3 +333,17 @@ function getbgcolor($page) {
 	}
 
 }
+
+
+
+
+
+
+function listchildren($page) {
+	$out = '<ul>';
+	foreach ($page->children as $child) {
+		$out .= "<li><a href='{$child->url}'>{$child->title}</a></li>";
+	}
+	$out .= '</ul>';
+	return $out;
+}
