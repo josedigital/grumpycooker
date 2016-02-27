@@ -56,7 +56,7 @@ $(function() {
     toggler('.fa','fa-square');
     var tog = $(this).find('i').attr('class');
     console.log(tog);
-    $.post("/", {gridview: tog});
+    $.post("./", {'gridview': tog});
     return false;
   });
 
