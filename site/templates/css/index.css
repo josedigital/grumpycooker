@@ -1374,8 +1374,10 @@ img.align_left {
 }
 @media only screen and (min-width: 740px) {
   .gridv {
-    height: 600px;
     transition: all 0.3s;
+  }
+  .gridv.med-4 {
+    height: 600px;
   }
   .m-t-1 {
     margin-top: 1em;
