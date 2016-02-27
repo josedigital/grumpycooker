@@ -23,9 +23,14 @@ if($numComments > 0) $numCommentsStr = sprintf(_n('%d Comment', '%d Comments', $
 if($small == true) :
 	if($config->ajax) {
     	$session->gridview = $input->post['gridview'];
-    	echo $gridview;
+    	// $session->gridview = 'fa fa-2x fa-th';
 	}
 	$gridview = ( $session->gridview == 'fa fa-2x fa-square' ) ? ' med-4' : '';
+	// if( $session->gridview == 'fa fa-2x fa-square' ) {
+	// 	$gridview = ' med-4';
+	// } elseif ( $session->gridview == 'fa fa-2x fa-th' ) {
+	// 	$gridview = '';
+	// }
 
 ?>
 <div class="small-12 columns gridv <?php echo getbgcolor($page); echo $gridview; ?>">
