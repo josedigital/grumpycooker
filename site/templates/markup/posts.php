@@ -37,7 +37,7 @@ if($small) {
 	if($total) echo "
 		<div id='recipes' class='small-12 columns'>
 			<h3 class='left'>" . sprintf(__('Recipes %1$d to %2$d of %3$d'), $start, $end, $total) . "{$modifier}</h3>
-			<span class='right m-t-1'><a href='#' class='make-grid'><i class='fa fa-th fa-2x'></i></a></span>
+			<span class='right m-t-1 show-med hide-small'><a href='#' class='make-grid'><i class='fa fa-th fa-2x'></i></a></span>
 		</div>";
 }
 
