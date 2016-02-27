@@ -1163,11 +1163,14 @@ button.pill:after,
   }
 }
 nav {
+  background-color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
   padding: 1em;
+  position: fixed;
   text-align: center;
+  width: 100%;
   z-index: 2;
 }
 nav ul li {
@@ -1201,6 +1204,7 @@ nav ul li a.meal-plans:hover {
   color: #060;
 }
 .nav-logo {
+  margin: 0 auto;
   transition: all 0.3s;
 }
 .nav-logo.hide {
@@ -1208,6 +1212,9 @@ nav ul li a.meal-plans:hover {
 }
 .nav-logo.show {
   opacity: 1;
+}
+.masthead {
+  padding-top: 4em;
 }
 .tagline {
   color: #bdbdbd;
@@ -1385,8 +1392,9 @@ img.align_left {
 }
 @media only screen and (min-width: 980px) {
   nav {
-    position: fixed;
+    background-color: transparent;
     padding: 1em;
+    width: 150px;
   }
   nav ul li {
     display: block;

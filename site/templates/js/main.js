@@ -54,6 +54,9 @@ $(function() {
     toggler('.gridv','med-4');
     toggler('.fa','fa-th');
     toggler('.fa','fa-square');
+    var tog = $(this).find('i').attr('class');
+    console.log(tog);
+    $.post("/", {gridview: tog});
     return false;
   });
 
