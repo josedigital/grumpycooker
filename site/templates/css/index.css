@@ -1386,6 +1386,11 @@ img.align_left {
   .gridv.med-4 {
     height: 600px;
   }
+  .make-grid span {
+    font-size: 12px;
+    font-size: 0.75rem;
+    margin: -10px 0 0;
+  }
   .m-t-1 {
     margin-top: 1em;
   }
