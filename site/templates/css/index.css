@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,300,700|Raleway:400,300,700|Lora:400,700");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 *,
 *:before,
 *:after {
@@ -164,7 +165,7 @@ p {
   margin: 0 0 1em 0;
 }
 a {
-  color: #fff;
+  color: #c42275;
   background: transparent;
   text-decoration: none;
   transition: all 0.3s;
@@ -172,7 +173,7 @@ a {
 a:active,
 a:hover {
   outline: 0;
-  color: #999;
+  color: #761446;
 }
 h1,
 .h1,
@@ -692,7 +693,7 @@ button.pill:after,
   transition: all 0.3s;
 }
 .button-link {
-  color: #fff;
+  color: #c42275;
   text-decoration: underline;
   border: 0;
   background: transparent;
@@ -1162,11 +1163,14 @@ button.pill:after,
   }
 }
 nav {
+  background-color: #fff;
   font-family: 'Oswald', sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
   padding: 1em;
+  position: fixed;
   text-align: center;
+  width: 100%;
   z-index: 2;
 }
 nav ul li {
@@ -1200,6 +1204,7 @@ nav ul li a.meal-plans:hover {
   color: #060;
 }
 .nav-logo {
+  margin: 0 auto;
   transition: all 0.3s;
 }
 .nav-logo.hide {
@@ -1207,6 +1212,9 @@ nav ul li a.meal-plans:hover {
 }
 .nav-logo.show {
   opacity: 1;
+}
+.masthead {
+  padding-top: 4em;
 }
 .tagline {
   color: #bdbdbd;
@@ -1280,6 +1288,9 @@ img.align_left {
 .yellow {
   background-color: #d1c92d;
 }
+.yellow p {
+  color: rgba(22,22,22,0.9);
+}
 .orange {
   background-color: #dc6542;
 }
@@ -1329,6 +1340,11 @@ img.align_left {
   font-size: 12px;
   font-size: 0.75rem;
 }
+.recipe img {
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  width: 85%;
+}
 .recipe-page h2,
 .recipe-page p,
 .recipe-page ul {
@@ -1363,11 +1379,27 @@ img.align_left {
 .next-prev-posts a color white:hover {
   color: rgba(255,255,255,0.4);
 }
+@media only screen and (min-width: 740px) {
+  .gridv {
+    transition: all 0.3s;
+  }
+  .gridv.med-4 {
+    height: 600px;
+  }
+  .make-grid span {
+    font-size: 12px;
+    font-size: 0.75rem;
+    margin: -10px 0 0;
+  }
+  .m-t-1 {
+    margin-top: 1em;
+  }
+}
 @media only screen and (min-width: 980px) {
   nav {
-    position: fixed;
+    background-color: transparent;
     padding: 1em;
-    text-align: left;
+    width: 150px;
   }
   nav ul li {
     display: block;

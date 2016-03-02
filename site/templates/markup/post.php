@@ -21,8 +21,13 @@ if($numComments > 0) $numCommentsStr = sprintf(_n('%d Comment', '%d Comments', $
 
 
 if($small == true) :
+	if($config->ajax) {
+    	$session->gridview = $input->post['gridview'];
+	}
+	$gridview = ( $session->gridview == 'fa fa-2x fa-square' ) ? ' med-4' : '';
+
 ?>
-<div class="small-12 columns <?php echo getbgcolor($page);?>">
+<div class="small-12 columns gridv <?php echo getbgcolor($page); echo $gridview; ?>">
     <div class="recipe text-center" id='post-<?php echo $page->id; ?>'>
         <h3 class="font-bold uppercase"> <?php echo "<a href='{$page->url}'>{$page->title}</a>"; ?></h3>
 		<?php 

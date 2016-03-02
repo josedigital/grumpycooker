@@ -8,7 +8,12 @@
 // We pull some data from the homepage in a few places in this main template, so we keep it ready here
 $homepage = $pages->get('/');
 
-if(empty($content)) $content = '<section class="page-body"><div class="container"><div class="small-12 med-8 med-push-2 columns"><h3 class="font-bold uppercase">'.$headline.'</h3>'.$page->body.'</div></div></section>';
+if(empty($content)) 
+	$content = '<section class="page-body"><div class="container"><div class="small-12 med-8 med-push-2 columns"><h3 class="font-bold uppercase">'.$headline.'</h3>'.$page->body;
+	if($page->numChildren) $content .= listchildren($page);
+	$content .= '</div></div></section>';
+
+
 
 // determine what the ever important browser <title> tag should be
 if($page->browser_title) $browserTitle = $page->browser_title; 
@@ -20,6 +25,7 @@ $config->styles->add($config->urls->templates . 'css/index.css');
 
 // add our javascripts
 $config->scripts->prepend('http://code.jquery.com/jquery-1.12.0.min.js');
+$config->scripts->add($config->urls->templates . 'js/vendor/jquery.scrolly.min.js'); 
 $config->scripts->add($config->urls->templates . 'js/main.js'); 
 
 ?>

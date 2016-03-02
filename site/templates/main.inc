@@ -81,7 +81,7 @@ $config->scripts->add($config->urls->templates . 'js/main.js');
 
 
 
-
+		
     	<?php echo $content; ?>
             
 

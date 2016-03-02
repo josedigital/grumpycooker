@@ -1,10 +1,13 @@
 //  NAVIGATION
 // ===========
 nav
+  background-color white
   font-family 'Oswald', sans-serif
   font-size(18)
   padding 1em
+  position fixed
   text-align center
+  width 100%
   z-index 2
   ul
     li
@@ -32,9 +35,14 @@ nav
 .nav-logo
   &.hide
     opacity(0)
+  margin 0 auto
   transition()
   &.show
     opacity(1)
+
+
+.masthead
+  padding-top 4em
   
 
 .tagline
@@ -102,6 +110,8 @@ img
   background-color light-green
 .yellow
   background-color yellow
+  p
+    color rgba(22,22,22,0.9)
 .orange
   background-color orange
 .pink
@@ -126,6 +136,11 @@ img
 .view
   font-size(12)
 
+.recipe
+  img
+    border-radius 6px
+    box-shadow 0px 0px 20px rgba(black, 0.3)
+    width 85%
 
 .recipe-page
   h2, p, ul
@@ -135,7 +150,6 @@ img
   h4
     color dark-purple
   img
-    // padding 1em
     border-radius 6px
 
 .MarkupPagerNav

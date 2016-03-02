@@ -14,23 +14,23 @@ $(function() {
   // toggler adds or removes class to DOM Element
   // @param   string  domel The DOM Element to add class to or remove class form
   // @param   string  classname The name of the class to add or remove
-  // toggler = function(domel,classname) {
+  var toggler = function(domel,classname) {
     
-  //   open = function() {
-  //     domel.addClass(classname);
-  //   };
+    open = function() {
+      $(domel).addClass(classname);
+    };
     
-  //   close = function() {
-  //     domel.removeClass(classname);
-  //   };  
+    close = function() {
+      $(domel).removeClass(classname);
+    };  
     
-  //   if(domel.hasClass(classname)) {
-  //     close();
-  //   } else {
-  //     open();      
-  //   }
+    if($(domel).hasClass(classname)) {
+      close();
+    } else {
+      open();      
+    }
     
-  // };
+  };
 
 
   $(document).scroll(function() {
@@ -48,6 +48,17 @@ $(function() {
 
   $('.scrolly').scrolly();
 
+
+
+  $('.make-grid').on('click', function() {
+    toggler('.gridv','med-4');
+    toggler('.fa','fa-th');
+    toggler('.fa','fa-square');
+    var tog = $(this).find('i').attr('class');
+    console.log(tog);
+    $.post("./", {'gridview': tog});
+    return false;
+  });
 
 
 });
