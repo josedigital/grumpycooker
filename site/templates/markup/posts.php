@@ -33,11 +33,12 @@ if($small) {
 	$start = $posts->getStart()+1;
 	$end = $start + count($posts)-1;
 	$total = $posts->getTotal();
+	$icon = ($session->gridview) ? $session->gridview : 'fa fa-th fa-2x';
 
 	if($total) echo "
 		<div id='recipes' class='small-12 columns'>
 			<h3 class='left'>" . sprintf(__('Recipes %1$d to %2$d of %3$d'), $start, $end, $total) . "{$modifier}</h3>
-			<div class='right m-t-1 show-med hide-small text-center'><a href='#' class='make-grid'><i class='".$session->gridview."'></i><span class='block'>Grid View</span></a></div>
+			<div class='right m-t-1 show-med hide-small text-center'><a href='#' class='make-grid'><i class='".$icon."'></i><span class='block'>Grid View</span></a></div>
 		</div>";
 }
 
