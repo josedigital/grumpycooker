@@ -80,6 +80,19 @@ if($small == true) :
 
                     <h3 class="font-bold uppercase">Process</h3>
                     <?php echo $page->directions; ?>
+
+					<p class="tags">
+	                    <?php 
+						if(count($page->tags)) {
+							$out = "<span>" . __('Tags:') . '</span> '; 
+							foreach($page->tags as $tag) {
+								$out .= "<span class='font-bold'><a href='{$tag->url}'>{$tag->title}</a></span>, ";
+							}
+							echo rtrim($out, ", ") . "</p> ";
+						}
+	                    ?>
+					</p>
+
                     
                 </div>
             </div>

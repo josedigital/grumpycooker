@@ -13,8 +13,8 @@ function renderNextPrevPosts($page) {
 	$prevPost = $page->parent->child("date<$date, sort=-date");
 
 	$out = "<section class='next-prev'><div class='next-prev-posts container'><div class='small-12 columns'>"; 
-	if($prevPost->id > 0) $out .= "<p class='prev-post left'><span>&lt;</span> <a href='{$prevPost->url}'>{$prevPost->title}</a></p>";
-	if($nextPost->id > 0) $out .= "<p class='next-post right'><a href='{$nextPost->url}'>{$nextPost->title}</a> <span>&gt;</span></p>";
+	if($prevPost->id > 0) $out .= "<p class='prev-post left text-center'><span class='font-bold uppercase'>Previous Recipe</span><br><a href='{$prevPost->url}'>{$prevPost->title}</a></p>";
+	if($nextPost->id > 0) $out .= "<p class='next-post right text-center'><span class='font-bold uppercase'>Next Recipe</span><br><a href='{$nextPost->url}'>{$nextPost->title}</a></p>";
 	$out .= "</div></div></div></section>";
 	return $out; 
 }

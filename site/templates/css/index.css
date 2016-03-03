@@ -1359,6 +1359,11 @@ img.align_left {
 .recipe-page img {
   border-radius: 6px;
 }
+.tags {
+  border-top: 1px solid #bdbdbd;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
 .MarkupPagerNav {
   list-style: none;
   text-align: center;
@@ -1375,6 +1380,12 @@ img.align_left {
 }
 .MarkupPagerNav li a:hover {
   text-decoration: underline;
+}
+.next-prev-posts p span {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #000;
 }
 .next-prev-posts a color white:hover {
   color: rgba(255,255,255,0.4);
