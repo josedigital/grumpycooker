@@ -4,6 +4,7 @@
 *.old/*
 *.new
 *.new/*
+config.codekit
 old
 old/*
 *[a-z].1
