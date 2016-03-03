@@ -19,7 +19,6 @@ function renderNextPrevPosts($page) {
 	return $out; 
 }
 
-
 // render our blog post and comments
 // $content = renderPosts($page) . renderComments($page->comments) . renderNextPrevPosts($page); 
 $content = renderPosts($page) . renderNextPrevPosts($page); 
